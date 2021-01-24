@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- one for connected internet -->
+
+    <LinearLayout
+        android:id="@+id/internetconnected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/internet"
+            android:layout_gravity="center"
+            android:padding="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cool, You are connected to the internet"
+            android:textSize="20dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <!-- one for no internet connection -->
+
+    <LinearLayout
+        android:id="@+id/nointernet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/no_internet"
+            android:layout_gravity="center"
+            android:padding="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opps!!! You are not connected to the internet"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
